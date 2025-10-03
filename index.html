@@ -1,195 +1,276 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ludwig von Schoenfeldt</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="icon" href="./favicon.ico">
-
-
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cardo:700|Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-        crossorigin="anonymous" />
-
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
 </head>
 <body>
-    <center>
-        <font size="4">
-            <div class="main">
-                <div class="leftbar">
-                    <center>
-                        <div align="center" class="title">
-                            <img src="./me.jpeg" alt="Ludwig"
-                                style="width:75%; margin-bottom:10px;  margin-left:5%;  margin-right:5%;  margin-top:17%; border-radius: 50%;">
+    <div class="aurora"></div>
+    <header class="top-nav">
+        <div class="brand">Ludwig von Schoenfeldt</div>
+        <nav class="nav-links">
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#research">Research</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+        </nav>
+        <div class="nav-actions">
+            <a class="button ghost" href="mailto:lvonschoenfeldt@ucsd.edu"><i class="fas fa-envelope"></i><span>Email</span></a>
+            <a class="button solid" href="Ludwig__von_Schoenfeldt_-_Full-Stack_Developer,_Researcher,_AI_Engineer.pdf" target="_blank" rel="noopener"><i class="fas fa-file-download"></i><span>Resume</span></a>
+        </div>
+    </header>
 
-                            <h1 style="padding:0; margin-bottom:0;">Ludwig von Schoenfeldt</h1>
-                            <p style="font-family: 'Quicksand', Arial, sans-serif;"> Ugrad @ UCSD, Computer Engineering</p>
-
-                        </div>
-
-                        <div class="links">
-
-                            <div align="center"><a class="example_a" href="CV_2023.pdf" target="_blank"
-                                    rel="nofollow noopener" style="margin-bottom:3%; margin-top:3%;">
-                                    Resume &nbsp; <i class="fas fa-download" id="icon"></i>
-                                </a></div>
-
-                            <div align="center"><a class="example_a" href="CV_2023.pdf" target="_blank"
-                                    rel="nofollow noopener" style="margin-bottom:3%; margin-top:3%;">
-                                    CV &nbsp; &nbsp; &nbsp; &nbsp; <i class="fas fa-download" id="icon"></i>
-                                </a></div>
-
-                            <div align="center"><a class="example_a" href="mailto:lvonschoenfeldt@ucsd.edu"
-                                    target="_blank" rel="nofollow noopener" style="margin-bottom:3%">
-                                    Email &nbsp; &nbsp;<i class="fas fa-envelope-open-text" id="icon"></i>
-                                </a></div>
-
-                            <div align="center"><a class="example_a" href="https://www.github.com/Ludwigvsch"
-                                    target="_blank" rel="nofollow noopener" style="margin-bottom:3%">
-                                    Github &nbsp;<i class="fab fa-github" id="icon"></i>
-                                </a></div>
-                            <div align="center"><a class="example_a"
-                                    href="https://www.linkedin.com/in/ludwig-von-schoenfeldt-11a116179" target="_blank"
-                                    rel="nofollow noopener" style="margin-bottom:3%">
-                                    Linkedin &nbsp;<i class="fab fa-linkedin-in" id="icon"></i>
-                                </a></div>
-
-
-
-                        </div>
-
-
-                    </center>
+    <main class="page">
+        <section class="hero" id="top">
+            <div class="hero-copy">
+                <p class="hero-kicker">Computer Engineering @ UC San Diego · Researcher · Product Engineer</p>
+                <h1>Building human-centered experiences that merge intelligent systems with beautiful design.</h1>
+                <p class="hero-summary">I design and ship ML-powered products from tinyML wearables to cross-platform mobile apps. My research in bioacoustics and climate tech has been showcased at NeurIPS and supported by UC San Diego's <a href="https://kastner.ucsd.edu" target="_blank" rel="noopener">Kastner Research Group</a> and <a href="https://e4e.ucsd.edu" target="_blank" rel="noopener">Engineers for Exploration</a>.</p>
+                <div class="hero-actions">
+                    <a class="button solid" href="Ludwig__von_Schoenfeldt_-_Full-Stack_Developer,_Researcher,_AI_Engineer.pdf" target="_blank" rel="noopener">Download Resume</a>
+                    <a class="button ghost" href="https://www.linkedin.com/in/ludwig-von-schoenfeldt-11a116179" target="_blank" rel="noopener">Connect on LinkedIn</a>
                 </div>
-
-                <div class="rightbar">
-                    <div align="left">
-
-                        <b>
-                            <h2>About Me</h2>
-                        </b>
-                        <p style="width:90%">Experienced in full-stack software development. Currently leveraging deep learning research in bioacoustic classification using CNNs, Transformers and RNNs. Interested in optimizing low-level architectures for ML/DL classification by exploring model distillation, pruning and quantization. Bilingual in English and German.</p>
-
-
-                        <b>
-                            I am currently in the process of updating this website, so please excuse if some things are missing. To get a more updated version of my resume, please click on the resume button.
-                        </b>                    
+                <div class="hero-highlights">
+                    <div class="highlight-card">
+                        <span class="highlight-title">Incoming SWE Intern</span>
+                        <span class="highlight-detail">Apple · 2025</span>
                     </div>
-    <div align="left" style="margin-top:4%">
-        <b>
-            <h2>Education</h2>
-        </b>
-        <p style="width:90%">
-            <b>BS Computer Engineering, University of California San Diego</b> (Expected June 2026)<br>
-            Activities and societies: Focusing on ML research and hardware optimizations, ACM, IEEE
-        </p>
-    </div>
-<div align="left" style="margin-top:4%">
-                        <b>
-                            <h2>Experience</h2>
-                        </b>
-<ul>
-    <li><b>Software Engineering Intern, Apple Inc., San Diego, US</b> (June 2025 — Sept 2025)
-        <ul>
-            <li>Incoming Software Engineering Intern for this summer</li>
-        </ul>
-    </li>
-    <li><b>Undergraduate Student Researcher, Engineers for Exploration &amp; KRG @ UC San Diego</b> (Oct 2023 — Present)
-        <ul>
-            <li>Project Lead managing and training a team of 15 undergraduate students for various tasks (including ML, SE, DS)</li>
-            <li>Using CNNs to classify bird sounds in the Amazon rainforest in Peru in collaboration with the San Diego Zoo</li>
-            <li>Conducting advanced data science research with several terabytes of audio data on HPC using Pytorch, TensorFlow, ONNX, etc.</li>
-            <li>Exploring new approaches using Transformers, RNNs and hybrid models such as CNN Transformer Hybrid HuBERT</li>
-            <li>Developing Pytorch + Rust implementation to drastically speed up inference and training times for larger models</li>
-            <li>Developing a Desktop app using Electron.js which encapsulates labeling, running inference and storing data using SQLite</li>
-            <li>Awarded SRIP under mentorship of Professor Dr. Ryan Kastner &amp; Dr. Curt Schurgers at Jacobs School of Engineering</li>
-            <li>Awarded Halıcıoğlu Data Science Institute Undergraduate Research Scholarship with Dr. Ryan Kastner</li>
-            <li>Working on low power microcontrollers to develop neck collars to monitor Panda’s behaviors using deep learning @KRG</li>
-            <li>Building tinyML solution for real-time animal sound inference on STM32, using MCUNET for CNN pruning &amp; quantizing</li>
-            <li>Published a research paper to the NeurIPS climate change workshop and presented at the conference</li>
-        </ul>
-    </li>
-    <li><b>Research Assistant, Rady School of Management @ UC San Diego</b> (Aug 2023 — June 2024)
-        <ul>
-            <li>Paid On-campus position leading technical development of a sleep study with over 30,000 participants across over 100 US college campuses through cross-platform app development using frameworks like React and Flutter</li>
-            <li>Conducting advanced NLP research for a national research project about PPP with several terabytes of projected data using Numpy, Pandas, TensorFlow, Pytorch and Scikit on the Narrows Cluster at San Diego Supercomputer Center (SDSC)</li>
-            <li>Integrated external APIs, including Fitbit's services, GCC &amp; Firebase, for seamless sleep data retrieval and analysis</li>
-        </ul>
-    </li>
-    <li><b>Software Engineer Intern, doubleSlash Net-Business GmbH, Munich, Germany</b> (Jul 2020 — Dec 2020)
-        <ul>
-            <li>Worked on my own backend project for internal IoT devices leveraging Dotnet, Microsoft Azure, C# and FFmpeg under the direct supervision of the Senior Developer and Microsoft MVP Ralf Richter</li>
-            <li>Assisted my team with client management and client products, creating several important features to in-house tools/products used by BMW and Porsche, such as the Navigation system, Light system and control system</li>
-        </ul>
-    </li>
-    <li><b>Head Of Software Development, TwoTronic GmbH, Meitingen, Germany</b> (Feb 2020 — Dec 2020)
-        <ul>
-            <li>Worked in a leadership position, supervising the software development of the Vehicle Scanner 3.0</li>
-            <li>Developed an iOS application for Porsche by building a full-stack application for their internal App Store under the mentorship of Porsche’s Head of Logistics and Central Services, Sascha Drechsel</li>
-            <li>Led the development of the integration with the internal Mercedes Benz network API for low latency direct API calls and transfer of Big Data directly from the built in servers on over 20 vehicle scanners deployed across Germany</li>
-            <li>Led a team of 5 AI Engineers working on a custom Computer Vision damage detection algorithm by modifying and training the existing CNN (VGG-19 model) on a custom-built supercomputer with over 50TB of training data from vehicle scanners at Amazon warehouses and Mercedes Benz achieving over 90% accuracy</li>
-        </ul>
-    </li>
-</ul>
-</div>
-
-                    <div align="left" style="margin-top:4%">
-                        <b>
-                            <h2>Projects</h2>
-                        </b>
-                        <ul>
-                            <li><b>PaintCalcArt, Los Angeles, CA</b> – Full-Stack mobile app platform with over 5000 downloads and over 100 daily active users that can accurately detect and calculate the number of colors in pictures to return the amount of paint needed for bigger mural projects through custom Computer Vision ML algorithms using TensorFlow, Scikit &amp; Pytorch integrated with Firebase Auth, Firestore, BigQuery, Flutter and GCC serverless functions.</li>
-                            <li><b>Growth Planner, Los Angeles, CA</b> – Cross-platform mobile app with over 10,000 downloads and over 300 daily active users built with Flutter and designed with SOLID design principles in test-driven development for college and high school students to plan out every day in collaboration with Harvard student and famous Youtuber John Fish.</li>
-                        </ul>
+                    <div class="highlight-card">
+                        <span class="highlight-title">NeurIPS 2024</span>
+                        <span class="highlight-detail">Climate Change AI Workshop presenter</span>
                     </div>
-
-                    <div align="left" style="margin-top:4%">
-                        <b>
-                            <h2>Technical Skills &amp; Awards</h2>
-                        </b>
-                        <p style="width:90%">
-                            <b>Languages:</b> Python, Java, C#, C, C++, SQL, JavaScript, Matlab, Dart, Assembly, Swift, Objective-C, CUDA &amp; OpenCL, Rust<br>
-                            <b>Software &amp; Tools:</b> OpenCV, TensorFlow, Pytorch, Microsoft Azure, GCC, Docker, Scikit, AWS, Pandas, Git, Flutter, Numpy<br>
-                            <b>Awards:</b> Won 1st place in the computer vision challenge and 3rd place overall at a 24-hour hackathon hosted by Oerlikon by leveraging OpenCV over custom-trained AI, allowing real-time identification of manufacturing parts. Also constructed a full physical unit in the makerspace that would allow full automation with motors.
-                        </p>
-                    </div>
-
-
-
-                <div class="courses_main" align="left" style="margin-top:0%; margin-bottom:0%">
-                    <b>
-                        <h2>Selected Coursework</h2>
-                    </b>
-
-                    <div class="courses">
-                        <b class="course_head"><u> Computer Engineering </u></b>
-                        <br> Data Structures &amp; Algorithms in C++/Java/C
-                        <br> Parallel Computing
-                        <br> Assembly Language
-                        </div>
-                    <div class="courses">
-                        <b class="course_head"><u> Electrical Engineering </u></b>
-
-                        <br> Circuit Analysics + Lab
-                        <br>
-                    </div>
-                    <div class="courses" style="margin-bottom:15px;">
-                        <b class="course_head"><u> Mathematics </u></b>
-                        <br> Linear Algebra
-                        <br> Discrete Mathematics
-                        <br>
-                        <br>
+                    <div class="highlight-card">
+                        <span class="highlight-title">Product Launches</span>
+                        <span class="highlight-detail">15K+ downloads across shipped apps</span>
                     </div>
                 </div>
             </div>
-            <div>
-    </center>
+            <div class="hero-portrait">
+                <div class="portrait-frame">
+                    <img src="./me.jpeg" alt="Portrait of Ludwig von Schoenfeldt">
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="section-heading">
+                <h2>Experience</h2>
+                <p>Leading multidisciplinary teams across research, product, and applied ML with a focus on measurable impact.</p>
+            </div>
+            <div class="cards-grid">
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Software Engineering Intern</h3>
+                        <span class="meta">Apple · San Diego · Summer 2025</span>
+                    </div>
+                    <p>Joining Apple's software engineering organization to craft intuitive, high-performance experiences that reach millions of users.</p>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Project Lead · ML Researcher</h3>
+                        <span class="meta"><a href="https://e4e.ucsd.edu" target="_blank" rel="noopener">Engineers for Exploration</a> &amp; <a href="https://kastner.ucsd.edu" target="_blank" rel="noopener">Kastner Research Group</a> · Oct 2023 – Present</span>
+                    </div>
+                    <p>Directing a 15-person research team developing bioacoustic intelligence in partnership with the <a href="https://sandiegozoowildlifealliance.org/" target="_blank" rel="noopener">San Diego Zoo Wildlife Alliance</a>.</p>
+                    <ul>
+                        <li>Architected CNN, Transformer, and RNN pipelines powering rainforest wildlife monitoring with multi-terabyte datasets on UCSD HPC.</li>
+                        <li>Shipping an Electron desktop suite for labeling, inference, and data curation with local SQLite storage.</li>
+                        <li>Deploying quantized tinyML models on STM32 collars to track panda behavior in the field.</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Research Assistant · Full-Stack Engineer</h3>
+                        <span class="meta">Rady School of Management · UC San Diego · Aug 2023 – Jun 2024</span>
+                    </div>
+                    <p>Led the technical build for a longitudinal sleep study spanning 30K+ participants, combining Flutter, React, Firebase, and Fitbit integrations.</p>
+                    <ul>
+                        <li>Scaled analytics workflows on the <a href="https://www.sdsc.edu" target="_blank" rel="noopener">San Diego Supercomputer Center</a> Narrows cluster.</li>
+                        <li>Developed NLP tooling for national PPP research leveraging TensorFlow, PyTorch, and advanced data pipelines.</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Software Engineer Intern</h3>
+                        <span class="meta"><a href="https://www.doubleslash.de/" target="_blank" rel="noopener">doubleSlash Net-Business</a> · Munich · Jul 2020 – Dec 2020</span>
+                    </div>
+                    <p>Delivered backend services for internal IoT platforms using .NET, Azure, and FFmpeg while collaborating with BMW and Porsche product teams.</p>
+                    <ul>
+                        <li>Implemented streaming infrastructure for connected-vehicle diagnostics.</li>
+                        <li>Partnered with stakeholders to design tooling that improves logistics insight across global deployments.</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Head of Software Development</h3>
+                        <span class="meta"><a href="https://www.fahrzeugscanner.de/en" target="_blank" rel="noopener">TwoTronic GmbH</a> · Meitingen · Feb 2020 – Dec 2020</span>
+                    </div>
+                    <p>Led end-to-end development of the Vehicle Scanner 3.0 platform, fusing AI, hardware, and cloud services for automotive OEMs.</p>
+                    <ul>
+                        <li>Shipped a Porsche internal iOS app with secure networking and analytics.</li>
+                        <li>Orchestrated a 5-person AI team refining a VGG-19-based damage detection model using 50TB of training imagery; open-sourced at <a href="https://github.com/Research-Squad/Car-Damage-Detection" target="_blank" rel="noopener">Research-Squad/Car-Damage-Detection</a>.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <h2>Products &amp; Flagship Projects</h2>
+                <p>Commercial launches and research-driven tooling that blend usability with intelligent automation.</p>
+            </div>
+            <div class="cards-grid projects-grid">
+                <article class="card project">
+                    <h3>PaintCalcArt</h3>
+                    <p>iOS app with 5K+ downloads that estimates mural paint volumes by detecting color palettes using custom CV models.</p>
+                    <div class="chip-row">
+                        <span class="chip">TensorFlow</span>
+                        <span class="chip">Flutter</span>
+                        <span class="chip">Firebase</span>
+                    </div>
+                    <a class="button text" href="https://apps.apple.com/us/app/paintcalcart/id1581297766" target="_blank" rel="noopener">View on App Store</a>
+                </article>
+                <article class="card project">
+                    <h3>Growth Planner</h3>
+                    <p>Cross-platform productivity companion with 10K+ downloads, designed with SOLID principles and test-driven development.</p>
+                    <div class="chip-row">
+                        <span class="chip">Flutter</span>
+                        <span class="chip">Firebase</span>
+                        <span class="chip">Product Design</span>
+                    </div>
+                    <a class="button text" href="https://apps.apple.com/us/app/growth-planner/id1504270190" target="_blank" rel="noopener">View on App Store</a>
+                </article>
+                <article class="card project">
+                    <h3>Vehicle Scanner Intelligence Suite</h3>
+                    <p>Computer vision system for automated damage detection deployed across 20+ scanners in Mercedes-Benz and Amazon logistics hubs.</p>
+                    <div class="chip-row">
+                        <span class="chip">C++</span>
+                        <span class="chip">Azure</span>
+                        <span class="chip">CNNs</span>
+                    </div>
+                    <a class="button text" href="https://drive.google.com/file/d/1rob8XO2f_FRfov0KXCYO7fEgJ9IZkiXa/view?usp=sharing" target="_blank" rel="noopener">Watch demo</a>
+                </article>
+                <article class="card project">
+                    <h3>Bioacoustic Intelligence Platform</h3>
+                    <p>End-to-end research toolchain from edge devices to Electron dashboards enabling wildlife conservation insights in the Amazon.</p>
+                    <div class="chip-row">
+                        <span class="chip">PyTorch</span>
+                        <span class="chip">Rust</span>
+                        <span class="chip">tinyML</span>
+                    </div>
+                    <a class="button text" href="https://e4e.ucsd.edu/news-and-updates/acoustics-at-neurips-2024" target="_blank" rel="noopener">Read field story</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="research" class="section">
+            <div class="section-heading">
+                <h2>Research &amp; Recognition</h2>
+                <p>Pushing the frontier of climate resilience and wildlife conservation through collaborative AI.</p>
+            </div>
+            <div class="research-grid">
+                <article class="research-card">
+                    <h3>NeurIPS 2024 · Climate Change AI Workshop</h3>
+                    <p>Published "Acoustic Monitoring of Amazon Biodiversity Using Deep Learning" advancing conservation-scale sound event detection.</p>
+                    <div class="research-links">
+                        <a href="https://www.climatechange.ai/papers/neurips2024/8" target="_blank" rel="noopener">Extended abstract</a>
+                        <a href="https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/neurips2024/8/paper.pdf" target="_blank" rel="noopener">Download paper (PDF)</a>
+                    </div>
+                </article>
+                <article class="research-card">
+                    <h3>Engineers for Exploration · Field Deployments</h3>
+                    <p>Leading audio intelligence expeditions and presenting outcomes across UC San Diego and industry partners.</p>
+                    <div class="research-links">
+                        <a href="https://e4e.ucsd.edu/news-and-updates/acoustics-at-neurips-2024" target="_blank" rel="noopener">Acoustics at NeurIPS feature</a>
+                        <a href="https://sandiegozoowildlifealliance.org/" target="_blank" rel="noopener">San Diego Zoo Wildlife Alliance</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="section-heading">
+                <h2>Education</h2>
+            </div>
+            <div class="card education-card">
+                <div class="card-header">
+                    <h3>University of California, San Diego</h3>
+                    <span class="meta">B.S. Computer Engineering · Expected June 2026</span>
+                </div>
+                <p>Focusing on deep learning research, hardware acceleration, and intelligent systems through the Jacobs School of Engineering.</p>
+                <p class="education-detail">Activities &amp; Honors: Halıcıoğlu Data Science Institute Undergraduate Research Scholarship · SRIP Scholar · ACM · IEEE.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-heading">
+                <h2>Technical Fluency</h2>
+                <p>Tooling I rely on to deliver performant experiences across research and production.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-column">
+                    <h3>Languages</h3>
+                    <div class="chip-cloud">
+                        <span class="chip">Python</span>
+                        <span class="chip">Rust</span>
+                        <span class="chip">C++</span>
+                        <span class="chip">C</span>
+                        <span class="chip">C#</span>
+                        <span class="chip">Java</span>
+                        <span class="chip">Swift</span>
+                        <span class="chip">Objective-C</span>
+                        <span class="chip">Dart</span>
+                        <span class="chip">CUDA</span>
+                        <span class="chip">OpenCL</span>
+                    </div>
+                </div>
+                <div class="skill-column">
+                    <h3>Frameworks &amp; Tools</h3>
+                    <div class="chip-cloud">
+                        <span class="chip">PyTorch</span>
+                        <span class="chip">TensorFlow</span>
+                        <span class="chip">ONNX</span>
+                        <span class="chip">Docker</span>
+                        <span class="chip">Azure</span>
+                        <span class="chip">AWS</span>
+                        <span class="chip">Firebase</span>
+                        <span class="chip">Flutter</span>
+                        <span class="chip">Electron</span>
+                        <span class="chip">OpenCV</span>
+                        <span class="chip">Scikit-learn</span>
+                    </div>
+                </div>
+                <div class="skill-column">
+                    <h3>Focus Areas</h3>
+                    <div class="chip-cloud">
+                        <span class="chip">Edge ML</span>
+                        <span class="chip">Bioacoustics</span>
+                        <span class="chip">tinyML</span>
+                        <span class="chip">Model Optimization</span>
+                        <span class="chip">Full-Stack Development</span>
+                        <span class="chip">Product Strategy</span>
+                        <span class="chip">Research Leadership</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Ludwig von Schoenfeldt. Crafted with curiosity and care.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
