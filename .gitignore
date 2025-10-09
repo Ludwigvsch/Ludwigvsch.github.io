@@ -1,0 +1,5 @@
+# Prevent outdated portrait assets from being committed
+me.jpeg
+img/me.jpeg
+img/ludwig-portrait.png
+ludwig-portrait.png
