@@ -193,7 +193,7 @@ body {
 
 .hero {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: 1fr;
   gap: 48px;
   align-items: flex-start;
   padding: 80px 0 40px;
@@ -202,7 +202,7 @@ body {
 }
 
 .hero-copy {
-  grid-column: span 7;
+  grid-column: 1 / -1;
 }
 
 .hero-kicker {
@@ -526,15 +526,6 @@ body {
   }
 }
 
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
-}
-
 @media (max-width: 1024px) {
   .top-nav {
     padding: 16px 28px;
@@ -565,10 +556,6 @@ body {
   .hero-actions,
   .hero-highlights {
     justify-content: center;
-  }
-
-  .hero-portrait {
-    grid-column: span 1;
   }
 }
 
