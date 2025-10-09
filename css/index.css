@@ -290,21 +290,21 @@ body {
 
 @media (min-width: 960px) {
   .hero {
-    grid-template-columns: minmax(0, 1fr) auto;
-    align-items: center;
-    column-gap: 64px;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 400px);
+    align-items: flex-start;
+    column-gap: 72px;
   }
 
   .hero-copy {
     grid-column: 1 / 2;
-    align-self: center;
+    align-self: flex-start;
   }
 
   .hero-portrait {
     grid-column: 2 / 3;
     justify-content: center;
-    align-self: center;
-    margin-top: 0;
+    align-self: flex-start;
+    margin-top: 16px;
   }
 }
 
@@ -320,7 +320,7 @@ body {
 
 @media (min-width: 960px) {
   .hero-portrait .portrait-frame {
-    width: min(380px, 100%);
+    width: min(360px, 100%);
   }
 }
 
