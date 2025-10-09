@@ -191,6 +191,7 @@ body {
   max-width: 640px;
 }
 
+
 .hero {
   display: grid;
   grid-template-columns: 1fr;
@@ -285,6 +286,30 @@ body {
   display: flex;
   justify-content: flex-end;
   align-self: flex-start;
+}
+
+@media (min-width: 960px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
+    align-items: flex-start;
+    column-gap: 56px;
+  }
+
+  .hero-copy {
+    grid-column: 1 / 2;
+    align-self: flex-start;
+  }
+
+  .hero-portrait {
+    grid-column: 2 / 3;
+    justify-content: center;
+    align-self: flex-start;
+    margin-top: 64px;
+  }
+
+  .portrait-frame {
+    width: min(360px, 100%);
+  }
 }
 
 .portrait-frame {
@@ -432,6 +457,21 @@ body {
 .research-card p {
   color: var(--text-secondary);
   line-height: 1.6;
+}
+
+.research-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 0;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.research-list strong {
+  color: var(--text-primary);
+  font-weight: 600;
 }
 
 .research-links {
