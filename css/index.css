@@ -290,25 +290,21 @@ body {
 
 @media (min-width: 960px) {
   .hero {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
-    align-items: flex-start;
-    column-gap: 56px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    column-gap: 64px;
   }
 
   .hero-copy {
     grid-column: 1 / 2;
-    align-self: flex-start;
+    align-self: center;
   }
 
   .hero-portrait {
     grid-column: 2 / 3;
     justify-content: center;
-    align-self: flex-start;
-    margin-top: 64px;
-  }
-
-  .portrait-frame {
-    width: min(360px, 100%);
+    align-self: center;
+    margin-top: 0;
   }
 }
 
@@ -320,6 +316,12 @@ body {
   box-shadow: 0 40px 80px -50px rgba(10, 15, 40, 0.8);
   backdrop-filter: blur(16px);
   animation: float 6s ease-in-out infinite;
+}
+
+@media (min-width: 960px) {
+  .hero-portrait .portrait-frame {
+    width: min(380px, 100%);
+  }
 }
 
 .portrait-frame img {
