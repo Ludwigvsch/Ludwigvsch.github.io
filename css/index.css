@@ -316,8 +316,8 @@ body {
   }
 
   .hero-copy {
-    flex: 1 1 0;
-    max-width: clamp(520px, 58vw, 680px);
+    flex: 1 1 clamp(520px, 56vw, 720px);
+    max-width: none;
     min-width: 0;
     align-self: center;
   }
@@ -330,13 +330,32 @@ body {
   }
 
   .hero-portrait .portrait-frame {
-    width: clamp(320px, 24vw, 420px);
+    width: clamp(320px, 22vw, 420px);
   }
 }
 
 @media (min-width: 820px) and (max-width: 1039px) {
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(260px, 360px);
+    align-items: center;
+    column-gap: clamp(32px, 5vw, 64px);
+  }
+
+  .hero-copy {
+    grid-column: 1 / 2;
+    max-width: none;
+  }
+
+  .hero-portrait {
+    grid-column: 2 / 3;
+    justify-content: center;
+    align-self: center;
+    margin-top: 0;
+  }
+
   .hero-portrait .portrait-frame {
-    width: min(320px, 70vw);
+    width: clamp(280px, 32vw, 340px);
   }
 }
 
